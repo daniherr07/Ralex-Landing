@@ -1,0 +1,280 @@
+@font-face { 
+    font-family: 'OpenSauceLight';
+    src: url(fonts/Opensauce/OpenSauceOne-Light.ttf);
+}
+@font-face {
+    font-family: 'OpenSauceBlack';
+    src: url(fonts/Opensauce/OpenSauceOne-Black.ttf);
+}
+@font-face {
+    font-family: 'OpenSauceSemiBold';
+    src: url(fonts/Opensauce/OpenSauceOne-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpenSauceLight', sans-serif;
+}
+
+
+:root{
+    /*--orange-degrate: linear-gradient*/
+}
+
+/*Primera sección/Header*/
+
+.header{
+    /*background-image: linear-gradient(90deg, rgba(255,255,255,0.5634628851540616) 0%, rgba(255,255,255,0.5354516806722689) 50%, rgba(255,255,255,0.5074404761904762) 100%), url("img/bg.jpg");*/
+    height: 84vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.5634628851540616) 0%, rgba(255,255,255,0.5354516806722689) 50%, rgba(255,255,255,0.5074404761904762) 100%), url(img/bg.jpg);
+    background-size: 100%;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.logo_ralex{
+    width: 250px;
+    margin: 3.6em 5.4em;
+}
+.contacto_button{
+    background-color: chocolate;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 250px;
+    position: absolute;
+    right: 2em;
+    margin-top: 1em;
+    font-family: 'OpenSauceBlack',sans-serif;
+}
+
+.contacto_button:hover{
+    background-color: rgba(235, 149, 87, 0.911);
+    cursor: pointer;
+}
+
+.header_container{
+    position: relative;
+    margin: 2em 5em;
+}
+.header_container h1{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 90px;
+}
+.header_container h2{
+    line-height: 30px;
+}
+.compra_button{
+    background-color: chocolate;
+    border-style: none;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 250px;
+    margin-top: 20px;
+    font-family: 'OpenSauceBlack',sans-serif;
+}
+
+.compra_button:hover{
+    background-color: rgba(235, 149, 87, 0.911);
+    cursor: pointer;
+}
+
+
+
+/* SEGUNDA SECCION BACKUP*/
+.about_us{
+    height: 74vh;
+}
+.about_us h1{
+    font-family: 'OpenSauceBlack',sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: underline;
+}
+.about_us_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 80px;
+}
+.about_us_img{
+    width: 500px;
+    border-radius: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.about_us_info{
+    margin-top: 70px;
+}
+.about_us_info p{
+    font-weight: 600;
+    font-size: 21px;
+}
+.consult_button{
+    background-color: chocolate;
+    border-style: none;
+    font-size: 1.1em;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 250px;
+    margin-top: 20px;
+    font-family: 'OpenSauceBlack',sans-serif;
+}
+
+.consult_button:hover{
+    background-color: rgba(235, 149, 87, 0.911);
+    cursor: pointer;
+}
+
+/*Tercera Sección/Atributos*/
+
+.attributes{
+    background-color: chocolate;
+    height: 83vh;
+}
+.attributes h1{
+    font-family: 'OpenSauceBlack',sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #ffff;
+    padding-top: 55px;
+    padding-left: 30px;
+}
+.attributes_container{
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    margin: 40px 0;
+}
+.attributes_card{
+    background-color: #ffff;
+    border-radius: 25px;
+    text-align: center;
+}
+.attributes_card img{
+    margin-top: 20px;
+    width: 22em;
+    height: 15em;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 3px solid #e0e0e0;
+    max-width: 100%;
+    object-fit:contain;
+}
+
+#attr_img3{
+    background-color: rgba(245, 245, 245, 0.452);
+}
+
+.attributes_card h2{
+    font-family: 'OpenSauceBlack',sans-serif;
+    font-size: 15px;
+    padding: 0.6em;
+    margin-top: 5px;
+}
+.attributes_card i{
+    margin: 24px 0;
+}
+
+#iconomedio{
+    margin-top:42px;
+}
+
+/*Cuarta Sección/Clientes*/
+
+.reviews h1{
+    font-family: 'OpenSauceBlack',sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+.reviews_container{
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    margin: 40px 0;
+}
+.reviews_card{
+    text-align: center;
+}
+.reviews_card img{
+    margin: 20px 0;
+    width: 8em;
+    height: 6em;
+    border-radius: 10px;
+    max-width: 100%;
+    object-fit:fill;
+    
+}
+.reviews_card p{
+    font-size: 16px;
+    margin: 13px 0 23px 0;
+}
+
+/*Quinta Sección/Footer*/
+footer{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    height: 38.5vh;
+    margin-top: 150px;
+    background-color: #eeeeee8f;
+}
+.footer_info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+}
+.footer_info h1{
+    font-family: 'OpenSauceBlack',sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.footer_info h2{
+    font-family: 'OpenSauceSemiBold', sans-serif;
+}
+.footer_img{
+    width: 53vw;
+    height: 18.6vw;
+    object-fit: cover;
+}
+.cellphone_footer_div{
+    position: relative;
+    top: 35%;
+    height: 10%;
+} 
+.column1, .cellphone_footer_div{
+    margin-left: 20px;
+}
+.direction_footer{
+    margin-top: 23px;
+} 
+.email_footer{
+    margin-top: 23px;
+}
+.authors{
+    margin-top: 48px;
+    font-size: 10px;
+}
